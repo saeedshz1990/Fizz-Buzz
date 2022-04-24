@@ -53,7 +53,26 @@ namespace FizzBuzz.Tests
             expected.Should().ThrowExactly<ModNotDivideByFive>();
         }
         
+        [Fact]
+        public void FzBizz_Mod_ByThreeAndByFive_Should_ByFizzBuzz()
+        {
+            var itterator = 15;
 
+            var sut = new Fizz();
+
+            var expected = sut.FizzBuzz(itterator);
+
+            expected.Should().Be("FizzBuzz");
+        }
         
+        [Fact]
+        public void FzBizz_Mod_ByThreeAndByFive_ThrowByThreeException()
+        {
+            var itterator = 16;
+            var sut = new Fizz();
+
+            Action expected = () => sut.FizzBuzz(itterator);
+            expected.Should().ThrowExactly<ModNotDivideByThreeAndFive>();
+        }
     }
 }

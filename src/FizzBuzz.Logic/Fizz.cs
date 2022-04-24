@@ -8,10 +8,10 @@ namespace FizzBuzz.Logic
         public string FizzByThree(double itterator)
         {
             if (itterator % 3 == 0)
-              return "Fizz";
+                return "Fizz";
             else if (itterator % 3 != 0)
                 throw new ModNotDivideByThree();
-            return "" ;
+            return "";
         }
 
         public string BuzzByFive(double itterator)
@@ -26,9 +26,15 @@ namespace FizzBuzz.Logic
         public string FizzBuzz(double itterator)
         {
             if (itterator % 3 == 0 && itterator % 5 == 0)
+            {
                 return "FizzBuzz";
+            }
+                
+            else if (itterator % 5 != 0 && itterator % 3 != 0)
+                throw new ModNotDivideByThreeAndFive();
 
             return "";
         }
+
     }
 }

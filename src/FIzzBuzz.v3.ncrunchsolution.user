@@ -7,7 +7,7 @@
       <ShowPassingTestsMenuOption>false</ShowPassingTestsMenuOption>
       <ShowFailingTestsMenuOption>true</ShowFailingTestsMenuOption>
       <ShowUnexecutedTestsMenuOption>true</ShowUnexecutedTestsMenuOption>
-      <ShowIgnoredTestsMenuOption>true</ShowIgnoredTestsMenuOption>
+      <ShowIgnoredTestsMenuOption>false</ShowIgnoredTestsMenuOption>
     </TestsWindowMenuOptions>
     <TestsWindowSplitterDistance>49.577465057373%</TestsWindowSplitterDistance>
   </Settings>
