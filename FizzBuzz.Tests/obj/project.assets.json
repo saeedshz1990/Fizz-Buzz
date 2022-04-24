@@ -1709,6 +1709,26 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "FizzBuzz.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FizzBuzz.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FizzBuzz.Application.dll": {}
+        }
+      },
+      "FizzBuzz.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FizzBuzz.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FizzBuzz.Logic.dll": {}
+        }
       }
     }
   },
@@ -6037,10 +6057,22 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "FizzBuzz.Application/1.0.0": {
+      "type": "project",
+      "path": "../FizzBuzz.Application/FizzBuzz.Application.csproj",
+      "msbuildProject": "../FizzBuzz.Application/FizzBuzz.Application.csproj"
+    },
+    "FizzBuzz.Logic/1.0.0": {
+      "type": "project",
+      "path": "../FizzBuzz.Logic/FizzBuzz.Logic.csproj",
+      "msbuildProject": "../FizzBuzz.Logic/FizzBuzz.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FizzBuzz.Application >= 1.0.0",
+      "FizzBuzz.Logic >= 1.0.0",
       "FluentAssertions >= 6.6.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "coverlet.collector >= 3.0.2",
@@ -6078,7 +6110,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\FizzBuzz.Application\\FizzBuzz.Application.csproj": {
+              "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\FizzBuzz.Application\\FizzBuzz.Application.csproj"
+            },
+            "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\FizzBuzz.Logic\\FizzBuzz.Logic.csproj": {
+              "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\FizzBuzz.Logic\\FizzBuzz.Logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

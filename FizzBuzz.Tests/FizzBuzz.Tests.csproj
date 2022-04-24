@@ -20,4 +20,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Application\FizzBuzz.Application.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Logic\FizzBuzz.Logic.csproj" />
+  </ItemGroup>
+
 </Project>
