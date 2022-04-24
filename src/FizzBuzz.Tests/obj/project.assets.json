@@ -1720,9 +1720,23 @@
           "bin/placeholder/FizzBuzz.Application.dll": {}
         }
       },
+      "FizzBuzz.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FizzBuzz.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FizzBuzz.Exceptions.dll": {}
+        }
+      },
       "FizzBuzz.Logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FizzBuzz.Application": "1.0.0",
+          "FizzBuzz.Exceptions": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FizzBuzz.Logic.dll": {}
         },
@@ -6063,6 +6077,11 @@
       "path": "../FizzBuzz.Application/FizzBuzz.Application.csproj",
       "msbuildProject": "../FizzBuzz.Application/FizzBuzz.Application.csproj"
     },
+    "FizzBuzz.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../FizzBuzz.Exceptions/FizzBuzz.Exceptions.csproj",
+      "msbuildProject": "../FizzBuzz.Exceptions/FizzBuzz.Exceptions.csproj"
+    },
     "FizzBuzz.Logic/1.0.0": {
       "type": "project",
       "path": "../FizzBuzz.Logic/FizzBuzz.Logic.csproj",
@@ -6072,6 +6091,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "FizzBuzz.Application >= 1.0.0",
+      "FizzBuzz.Exceptions >= 1.0.0",
       "FizzBuzz.Logic >= 1.0.0",
       "FluentAssertions >= 6.6.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
@@ -6113,6 +6133,9 @@
           "projectReferences": {
             "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj": {
               "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj"
+            },
+            "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj": {
+              "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj"
             },
             "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Logic\\FizzBuzz.Logic.csproj": {
               "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Logic\\FizzBuzz.Logic.csproj"

@@ -4,6 +4,120 @@
     "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Logic\\FizzBuzz.Logic.csproj": {}
   },
   "projects": {
+    "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj",
+        "projectName": "FizzBuzz.Application",
+        "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj",
+        "packagesPath": "C:\\Users\\98917\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\98917\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj",
+        "projectName": "FizzBuzz.Exceptions",
+        "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\98917\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\98917\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Logic\\FizzBuzz.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +144,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj": {
+                "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Application\\FizzBuzz.Application.csproj"
+              },
+              "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\98917\\source\\repos\\FIzzBuzz\\src\\FizzBuzz.Exceptions\\FizzBuzz.Exceptions.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
